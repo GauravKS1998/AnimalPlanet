@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-color: rgb(82, 117, 14);
+    --primary-color-alt: green;
+    --coral-color: coral;
+}
+
+nav {
+    width: 100%;
+    height: 12vh;
+    display: grid;
+    grid-template-columns: 20% 70%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px gray;
+    gap: 5vw;
+}
+#nav_left {
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+#nav_left h1 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: "Caesar Dressing", serif;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+}
+#nav_left img {
+    width: 80px;
+}
+#nav_right {
+    display: flex;
+    justify-content: space-around;
+}
+#nav_right a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+#nav_right a:hover {
+    color: var(--coral-color);
+}
+#nav_right button {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: black;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 100%;
+    cursor: pointer;
+}
+#nav_right button i {
+    font-size: 110%;
+}
+#nav_right button:hover {
+    background-color: var(--primary-color-alt);
+}
+
+#search_tab {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+}
+#search_box {
+    width: 100%;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 50% 10%;
+    grid-template-rows: 5vh;
+    place-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+#search_box input {
+    width: 100%;
+    height: 5vh;
+    padding: 20px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid gray;
+    font-size: 100%;
+}
+#search_box input:focus {
+    border-bottom: 2px solid var(--primary-color-alt);
+}
+#search_box i {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    box-shadow: 5px 5px 10px gray;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 150%;
+}
+#search_box i:hover {
+    box-shadow: 5px 5px 10px gray inset;
+}
+
+#all_animals {
+    padding: 5vh 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    grid-auto-rows: max-content;
+    justify-content: space-between;
+    gap: 5vh;
+}
+.animal_box {
+    width: 100%;
+    height: max-content;
+    padding: 3vh 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 80%;
+    place-content: center;
+    gap: 2vh;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 20px;
+}
+.animal_box button {
+    justify-self: baseline;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 100%;
+    cursor: pointer;
+}
+
+.loading {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 8px solid var(--primary-color);
+}

@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#animal_container {
+    width: 100%;
+    height: 100%;
+    padding: 8vh 0;
+    box-sizing: border-box;
+    grid-template-columns: 80%;
+    place-content: center;
+}
+.animal {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    place-content: center;
+}
+.animal_left {
+    width: 100%;
+    display: grid;
+    align-content: baseline;
+    gap: 3vh;
+}
+.animal_left div {
+    width: 100%;
+    display: grid;
+    gap: 1.5vh;
+}
+.animal_right {
+    width: 100%;
+    display: grid;
+    gap: 3vh;
+}
+.animal_right div {
+    display: grid;
+    gap: 1.5vh;
+}
